@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Coffepedia</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="foto/logo.png">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick.js CDN -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+</head>
+
+<body style="background-color: #F2F2F2;">
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Navbar Area -->
+
+        <div class="nikki-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container-fluid container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="nikkiNav">
+
+                        <!-- Nav brand -->
+                        <div class="row">
+                            <a href="index.html" class="nav-brand"><img src="foto/logo.png" alt=""></a>
+                            <!-- Search Form -->
+                            <div class="search-form">
+                                <form action="#" method="get">
+                                    <input type="search" name="search" class="form-control"
+                                        placeholder="Cari tempat nongkrongmu...">
+                                    <button type="submit"><i class="fa fa-search w-100"></i></button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- close btn -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="#">Telusuri</a>
+                                        <ul class="dropdown">
+                                            <li><a href="telusuri1.html">Yang lagi hits</a></li>
+                                            <li><a href="telusuri2.html">Pusat Kota</a></li>
+                                            <li><a href="telusuri3.html">Hidden Games</a></li>
+                                            <li><a href="telusuri4.html">Cocok Buat Nugas</a></li>
+                                            <li><a href="telusuri5.html">View Bagus</a></li>
+                                            <li><a href="#">Kecamatan</a>
+                                                <ul class="dropdown">
+                                                    <li><a href="balikpapanutara.html">Balikpapan Utara</a></li>
+                                                    <li><a href="balikpapankota.html">Balikpapan Kota</a></li>
+                                                    <li><a href="balikpapantengah.html">Balikpapan Tengah</a></li>
+                                                    <li><a href="balikpapantimur.html">Balikpapan Timur</a></li>
+                                                    <li><a href="balikpapanselatan.html">BalikpapanSelatan</a></li>
+                                                    <li><a href="balikpapanbarat.html">Balikpapan Barat</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Ulasan</a>
+                                        <ul class="dropdown">
+                                            <li><a href="ulasan.html">Tulis Ulasan</a></li>
+                                            <li><a href="tambahtempat.html">Tambah Tempat</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="favorit.html">Favorit</a></li>
+                                    <li><a class="btn text-white bg-dark rounded-pill" style="border-radius: 30px;"
+                                            id="loginBtn">Masuk</a></li>
+                                </ul>
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <div id="loginPopup" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="mr-2">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body row justify-content-center">
+                    <div class="col-12 text-center mb-2">
+                        <img src="foto/logo.png" alt="">
+                    </div>
+                    <div class="col-12 text-center mb-2 p-5">
+                        <div class="row p-3" style="border: 2px solid #000; border-radius: 30px;">
+                            <img src="foto/image 6.png" alt="" class="mr-5">
+                            <a onclick="loginWithGoogle()" style="font-size: 20px;">
+                                Lanjutkan dengan Google</a>
+                        </div>
+                    </div>
+                    <p class="text-center">Dengan melanjutkan, berarti Anda menyetujui <u>Persyaratan
+                            Penggunaan</u> serta mengonfirmasi bahwa Anda telah
+                        membaca <u>Persyaratan Privasi dan Cookie</u> kami.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ##### Banner Start ##### -->
+    <section class="blog-content-area mt-3 mb-5" style="background-image: url(foto/Rectangle\ 14.png);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- Blog Posts Area -->
+                <div class="col-12 col-lg-12">
+                    <div class="blog-posts-area">
+                        <div class="row justify-content-center align-content-center" style="height: 100vh;">
+                            <h1 style="font-size: 96px; font-weight: bolder" class="text-white">Tentang Coffepedia</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Banner End ##### -->
+
+    <!-- ##### Banner Start ##### -->
+    <section class="blog-content-area mt-3 mb-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-1 mr-4">
+                    <div class="row bg-light p-2 rounded border">
+                        <a href="#" class="col-12 mt-2" id="toggleProfil">
+                            <h6>Profil</h6>
+                        </a>
+                        <a href="#" class="col-12" id="toggleKontak">
+                            <h6>Kontak</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-7" id="profil">
+                    <div class="row">
+                        <h3>Profil Coffepedia</h3>
+                        <p class="text-justify text-dark fw-bold">
+                            Berkumpul bersama kerabat atau teman-teman merupakan kegiatan yang sering dilakukan
+                            orang-orang pada masa sekarang. Kegiatan ini juga telah memberikan ruang kepada pengusaha
+                            kuliner untuk terus melakukan inovasi sesuai dengan kebutuhan masyarakat.
+                        </p>
+                        <p class="text-justify text-dark">
+                            Coffeeshop dikenal juga menjadi salah satu destinasi favorit untuk berkumpul, selain itu
+                            adanya coffeeshop juga mampu mendukungan kebangkitan perekonomian di sektor kuliner.
+                        </p>
+                        <p class="text-justify text-dark">
+                            Dengan beragamnya coffeeshop yang ada, tentu saja banyak yang menjadi faktor untuk
+                            menentukan coffeeshop mana yang akan dipilih, seperti harga, kenyamanan, lokasi, dan
+                            lain-lain.
+                        </p>
+                        <p class="text-justify text-dark">
+                            Kami menyadari dan mengalami betapa sulitnya mencari informasi mengenai coffeeshop di Kota
+                            Balikpapan, maka diangkat dari keresahan tersebut, kami, Coffepedia, membangun situs ini
+                            untuk membantu para penikmat kopi atau pun kalian yang sekedar senang berkumpul di
+                            coffeeshop untuk mencari dan menentukan coffeeshop terbaik menurut kalian masing-masing.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-7" id="kontak" style="display: none;">
+                    <div class="row">
+                        <h3>Kontak Coffepedia</h3>
+                        <p class="text-justify text-dark">
+                            Ajak kami berkerja sama, kritik kami, beri kami saran, apapun itu, jangan ragu untuk
+                            menghubungi kami untuk suarakan isi hatimu, Bantu kami untuk terus maju dan berkembang.
+                        </p>
+                        <div>
+                            <p class="text-justify text-dark">Telepon : 081234567890</p>
+                            <p class="text-justify text-dark">Email : coffepedia@gmail.com</p>
+                            <p class="text-justify text-dark">Follow us</p>
+                            <div class="row">
+                                <a href="#"><img src="foto/image 7.png" width="50px" alt=""></a>
+                                <a href="#"><img src="foto/image 8.png" width="50px" alt=""></a>
+                                <a href="#"><img src="foto/Frame 1.png" width="50px" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Banner End ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="copywrite-text">
+                        <p>&copy; 2024 Coffepedia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+
+    <script>
+
+        $('#loginBtn').click(function () {
+            $('#loginPopup').modal('show');
+        });
+
+        function loginWithGoogle() {
+            // Implement Google authentication logic here
+            alert('Implement Google authentication logic');
+        }
+
+        // Ambil elemen yang akan ditoggle (div profil)
+        const profilDiv = document.getElementById('profil');
+        // Ambil elemen yang digunakan untuk toggle (link Profil)
+        const toggleProfil = document.getElementById('toggleProfil');
+
+        // Ambil elemen yang akan ditoggle (div kontak)
+        const kontakDiv = document.getElementById('kontak');
+        // Ambil elemen yang digunakan untuk toggle (link Kontak)
+        const toggleKontak = document.getElementById('toggleKontak');
+
+        // Tambahkan event listener untuk link Profil
+        toggleProfil.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent default action dari link
+
+            // Sembunyikan div kontak jika sedang terbuka
+            kontakDiv.style.display = 'none';
+
+            // Toggle tampilan div profil (dari none ke block atau sebaliknya)
+            if (profilDiv.style.display === 'none') {
+                profilDiv.style.display = 'block';
+            }
+        });
+
+        // Tambahkan event listener untuk link Kontak
+        toggleKontak.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent default action dari link
+
+            // Sembunyikan div profil jika sedang terbuka
+            profilDiv.style.display = 'none';
+
+            // Toggle tampilan div kontak (dari none ke block atau sebaliknya)
+            if (kontakDiv.style.display === 'none') {
+                kontakDiv.style.display = 'block';
+            }
+        });
+
+    </script>
+</body>
+
+</html>

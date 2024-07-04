@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Coffepedia</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="foto/logo.png">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick.js CDN -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+
+<body style="background-color: #F2F2F2;">
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Navbar Area -->
+
+            <div class="nikki-main-menu">
+                <div class="classy-nav-container breakpoint-off">
+                    <div class="container-fluid container">
+                        <!-- Menu -->
+                        <nav class="classy-navbar justify-content-between" id="nikkiNav">
+    
+                            <!-- Nav brand -->
+                             <div class="row">
+                                <a href="index.html" class="nav-brand"><img src="foto/logo.png" alt=""></a>
+                                <!-- Search Form -->
+                                <div class="search-form">
+                                    <form action="#" method="get">
+                                        <input type="search" name="search" class="form-control" placeholder="Cari tempat nongkrongmu...">
+                                        <button type="submit"><i class="fa fa-search w-100"></i></button>
+                                    </form>
+                                </div>
+                             </div>
+    
+                            <!-- Navbar Toggler -->
+                            <div class="classy-navbar-toggler">
+                                <span class="navbarToggler"><span></span><span></span><span></span></span>
+                            </div>
+    
+                            <!-- Menu -->
+                            <div class="classy-menu">
+    
+                                <!-- close btn -->
+                                <div class="classycloseIcon">
+                                    <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                                </div>
+    
+                                <!-- Nav Start -->
+                                <div class="classynav">
+                                    <ul>
+                                        <li><a href="#">Telusuri</a>
+                                            <ul class="dropdown">
+                                                <li><a href="telusuri1.html">Yang lagi hits</a></li>
+                                                <li><a href="telusuri2.html">Pusat Kota</a></li>
+                                                <li><a href="telusuri3.html">Hidden Games</a></li>
+                                                <li><a href="telusuri4.html">Cocok Buat Nugas</a></li>
+                                                <li><a href="telusuri5.html">View Bagus</a></li>
+                                                <li><a href="#">Kecamatan</a>
+                                                    <ul class="dropdown">
+                                                      <li><a href="balikpapanutara.html">Balikpapan Utara</a></li>
+                                                      <li><a href="balikpapankota.html">Balikpapan Kota</a></li>
+                                                      <li><a href="balikpapantengah.html">Balikpapan Tengah</a></li>
+                                                      <li><a href="balikpapantimur.html">Balikpapan Timur</a></li>
+                                                      <li><a href="balikpapanselatan.html">BalikpapanSelatan</a></li>
+                                                      <li><a href="balikpapanbarat.html">Balikpapan Barat</a></li>
+                                                    </ul>
+                                                  </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Ulasan</a>
+                                            <ul class="dropdown">
+                                                <li><a href="ulasan.html">Tulis Ulasan</a></li>
+                                                <li><a href="tambahtempat.html">Tambah Tempat</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="favorit.html">Favorit</a></li>
+                                        <li><a class="btn text-white bg-dark rounded-pill" style="border-radius: 30px;" id="loginBtn">Masuk</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Nav End -->
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <div id="loginPopup" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="mr-2">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body row justify-content-center">
+              <div class="col-12 text-center mb-2">
+                <img src="foto/logo.png" alt="">
+              </div>
+              <div class="col-12 text-center mb-2 p-5">
+                <div class="row p-3" style="border: 2px solid #000; border-radius: 30px;">
+                    <img src="foto/image 6.png" alt="" class="mr-5">
+                    <a onclick="loginWithGoogle()" style="font-size: 20px;">
+                        Lanjutkan dengan Google</a>
+                </div>
+              </div>
+              <p class="text-center">Dengan melanjutkan, berarti Anda menyetujui <u>Persyaratan
+                Penggunaan</u> serta mengonfirmasi bahwa Anda telah
+                membaca <u>Persyaratan Privasi dan Cookie</u> kami.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- ##### Banner Start ##### -->
+    <section class="blog-content-area mt-5 mb-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- Blog Posts Area -->
+                <div class="col-12 col-lg-12">
+                    <div class="blog-posts-area">
+                        <div class="row">
+                            <h1 style="font-size: 46px; font-weight: bolder">5 Varian rasa kopi yang harus kamu cobain</h1>
+                            <img src="foto/gambar.png" alt="">                       
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="row justify-content-center" style="background-color: #fff; border-radius: 10px;">
+                <!-- Blog Posts Area -->
+                <div class="col-12 col-lg-12 p-5">
+                    <div class="blog-posts-area">
+                        <div class="row ml-3 mr-3">
+                            <p class="text-dark text-justify">Selain minuman kopi murni, ada berbagai minuman rasa kopi lainnya yang patut Anda coba. Kopi merupakan salah satu minuman yang paling banyak digemari oleh banyak orang dari berbagai negara. Berikut 5 varian kopi yang lagi hits:</p>  
+                            <h5>1. Black coffee</h5>
+                            <div class="row mb-5">
+                                <div class="col-4">
+                                    <img src="foto/9 (1).png" alt="">
+                                </div>
+                                <div class="col-8">
+                                    <p class="text-dark text-justify">Black coffee atau kopi hitam merupakan hasil ekstraksi langsung dari bubuk  kopi yang direndam menggunakan air panas. Varian ini kemudian tersaji tanpa menambahkan perisa apa pun sehingga rasanya pahit. Penggemar kopi hitam kebanyakan adalah orang-orang dewasa.</p>
+                                </div>
+                            </div>         
+                            <h5>2. Espresso</h5>
+                            <div class="row mb-5">
+                                <div class="col-4">
+                                    <img src="foto/9 (2).png" alt="">
+                                </div>
+                                <div class="col-8">
+                                    <p class="text-dark text-justify">Mirip dengan kopi hitam, varian satu ini juga tidak menggunakan campuran susu maupun gula. Espresso bertekstur pekat, pahit, dan terdapat buih putih di atasnya yang terbentuk dari tekanan minyak di dalam bubuk kopi. Biasanya, varian ini disajikan menggunakan cangkir khusus espresso berukuran 30 ml sampai 118 ml. <br>Terdapat istilah “shot” yang berkaitan erat dengan minuman ini. Misalnya, 1 shot berarti 1 gelas espresso. Umumnya, varian ini sering digunakan untuk menambah cita rasa kopi yang biasanya tersedia dalam opsi extra shot espresso..</p>
+                                </div>
+                            </div>     
+                            <h5>3. Americano</h5>
+                            <div class="row mb-5">
+                                <div class="col-4">
+                                    <img src="foto/9 (3).png" alt="">
+                                </div>
+                                <div class="col-8">
+                                    <p class="text-dark text-justify">Americano adalah varian minuman kopi dari espresso yang diencerkan. Walaupun begitu, kandungan kafein di dalam americano sama dengan espresso. Varian ini memiliki rasa pahit yang tidak terlalu pekat dan bisa Anda nikmati dalam keadaan panas maupun dingin.</p>
+                                </div>
+                            </div>     
+                            <h5>4. Cold Brew</h5>
+                            <div class="row mb-5">
+                                <div class="col-4">
+                                    <img src="foto/9 (4).png" alt="">
+                                </div>
+                                <div class="col-8">
+                                    <p class="text-dark text-justify">Varian selanjutnya adalah cold brew yang memiliki rasa manis dan sedikit asam. Untuk membuat minuman ini, seduh bubuk kopi terlebih dahulu menggunakan air dingin semalaman agar rasanya lebih halus dan tidak terlalu pahit. <br>Setelah itu, sesuai dengan namanya, seduhan cold brew yang dingin ini bisa langsung Anda saring dan minum. Selain itu, Anda juga bisa tambahkan dengan air jika rasanya terlalu pekat.</p>
+                                </div>
+                            </div>     
+                            <h5>5. Latte</h5>
+                            <div class="row mb-5">
+                                <div class="col-4">
+                                    <img src="foto/9 (5).png" alt="">
+                                </div>
+                                <div class="col-8">
+                                    <p class="text-dark text-justify">Minuman latte atau kopi susu terbuat dari espresso dan susu dengan perbandingan 1:2. Latte merupakan minuman yang cocok jika Anda tidak suka rasa kopi yang terlalu pekat. <br>Biasanya, jenis minuman rasa kopi ini disajikan dalam cangkir dengan sedikit busa di atasnya yang digunakan untuk membuat motif-motif lucu dan indah. Latte dapat Anda nikmati dalam bentuk dan rasa originalnya atau dengan perisa, seperti vanilla dan kayu manis.</p>
+                                </div>
+                            </div>  
+                            
+                            <p class="text-dark text-justify">Secara garis besar, berbagai varian minuman rasa kopi di atas terdiri dari dua bahan, yaitu espresso dan susu. Walaupun begitu, setiap minuman memiliki cita rasanya sendiri dan tentunya menarik untuk dicoba bagi Anda para pecinta kopi.</p>            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Banner End ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="copywrite-text">
+                        <p>&copy; 2024 Coffepedia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+
+    <script>
+        $('#loginBtn').click(function() {
+        $('#loginPopup').modal('show');
+        });
+
+        function loginWithGoogle() {
+        // Implement Google authentication logic here
+        alert('Implement Google authentication logic');
+        }
+    </script>
+
+</body>
+
+</html>

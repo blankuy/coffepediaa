@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Coffepedia</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="foto/logo.png">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick.js CDN -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+</head>
+
+<body>
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Navbar Area -->
+
+        <div class="nikki-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container-fluid container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="nikkiNav">
+
+                        <!-- Nav brand -->
+                        <div class="row">
+                            <a href="index.html" class="nav-brand"><img src="foto/logo.png" alt=""></a>
+                            <!-- Search Form -->
+                            <div class="search-form">
+                                <form action="#" method="get">
+                                    <input type="search" name="search" class="form-control"
+                                        placeholder="Cari tempat nongkrongmu">
+                                    <button type="submit"><i class="fa fa-search w-100"></i></button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- close btn -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="#">Telusuri</a>
+                                        <ul class="dropdown">
+                                            <li><a href="telusuri1.html">Yang lagi hits</a></li>
+                                            <li><a href="telusuri2.html">Pusat Kota</a></li>
+                                            <li><a href="telusuri3.html">Hidden Games</a></li>
+                                            <li><a href="telusuri4.html">Cocok Buat Nugas</a></li>
+                                            <li><a href="telusuri5.html">View Bagus</a></li>
+                                            <li><a href="#">Kecamatan</a>
+                                                <ul class="dropdown">
+                                                    <li><a href="balikpapanutara.html">Balikpapan Utara</a></li>
+                                                    <li><a href="balikpapankota.html">Balikpapan Kota</a></li>
+                                                    <li><a href="balikpapantengah.html">Balikpapan Tengah</a></li>
+                                                    <li><a href="balikpapantimur.html">Balikpapan Timur</a></li>
+                                                    <li><a href="balikpapanselatan.html">BalikpapanSelatan</a></li>
+                                                    <li><a href="balikpapanbarat.html">Balikpapan Barat</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Ulasan</a>
+                                        <ul class="dropdown">
+                                            <li><a href="ulasan.html">Tulis Ulasan</a></li>
+                                            <li><a href="tambahtempat.html">Tambah Tempat</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="favorit.html">Favorit</a></li>
+                                    <li><a class="btn text-white bg-dark rounded-pill" style="border-radius: 30px;"
+                                            id="loginBtn">Masuk</a></li>
+                                </ul>
+                            </div>
+                            <!-- Nav End -->
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <div id="loginPopup" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="mr-2">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body row justify-content-center">
+                    <div class="col-12 text-center mb-2">
+                        <img src="foto/logo.png" alt="">
+                    </div>
+                    <div class="col-12 text-center mb-2 p-5">
+                        <div class="row p-3" style="border: 2px solid #000; border-radius: 30px;">
+                            <img src="foto/image 6.png" alt="" class="mr-5">
+                            <a onclick="loginWithGoogle()" style="font-size: 20px;">
+                                Lanjutkan dengan Google</a>
+                        </div>
+                    </div>
+                    <p class="text-center">Dengan melanjutkan, berarti Anda menyetujui <u>Persyaratan
+                            Penggunaan</u> serta mengonfirmasi bahwa Anda telah
+                        membaca <u>Persyaratan Privasi dan Cookie</u> kami.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ##### Banner Start ##### -->
+    <section class="blog-content-area mt-3 mb-4"
+        style="background-image: url(foto/Rectangle\ 15.png); background-size: cover; height: 100vh; background-repeat: no-repeat;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- Blog Posts Area -->
+                <div class="col-12 col-lg-12">
+                    <div class="blog-posts-area">
+                        <div class="row align-content-center justify-content-center" style="height: 100vh;">
+
+                            <h1 class="text-center" style="color: #fff; font-size: 70px; font-weight: bolder">Ngopi
+                                sambil dengerin live music</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Banner End ##### -->
+
+    <!-- ##### Content Start ##### -->
+    <section class="blog-content-area mt-5 mb-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- Blog Posts Area -->
+                <div class="col-12 col-lg-12">
+                    <div class="blog-posts-area">
+                        <!-- Pager -->
+                        <ol class="nikki-pager mb-2">
+                            <div>
+                                <h2>Berikut daftar coffeeshop yang menyajikan live music untuk nemenin kamu ngopi</h2>
+                            </div>
+                        </ol>
+                        <div class="row">
+                            <div class="col-12 col-sm-6 mb-50">
+                                <img src="foto/Group 14.png" alt="">
+                            </div>
+                            <div class="col-12 col-sm-6 mb-50">
+                                <h3>Kopi Rumah Mantan</h3>
+                                <div class="row ml-1">
+                                    <img src="foto/Star 1.png" alt="">
+                                    <img src="foto/Star 1.png" alt="">
+                                    <img src="foto/Star 1.png" alt="">
+                                    <img src="foto/Star 1.png" alt="">
+                                    <img src="foto/Star 1.png" alt="">
+                                </div>
+                                <p>Jalan Soekarno Hatta</p>
+                                <p class="mb-5">Selain tempatnya yang nyaman, setiap weekend kopi rumah mantan
+                                    menyajikan live performance dari musisi-musisi lokal</p>
+                                <a href="kopirumahmantan.html"><u>Lihat selengkapnya</u></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-sm-6 mb-50">
+                                <img src="foto/Group 14 (1).png" alt="">
+                            </div>
+                            <div class="col-12 col-sm-6 mb-50">
+                                <h3>A2B</h3>
+                                <div class="row ml-1">
+                                    <img src="foto/Star 1.png" alt="">
+                                    <img src="foto/Star 1.png" alt="">
+                                    <img src="foto/Star 1.png" alt="">
+                                    <img src="foto/Star 1.png" alt="">
+                                    <img src="foto/Star 1.png" alt="">
+                                </div>
+                                <p>Jalan Buana</p>
+                                <p class="mb-4">A2B sangat memanjakan pengunjungnya dengan live music performance di
+                                    rooftop mereka dipadukan dengan view Kota Balikpapan dari dataran tinggi</p>
+                                <a href="a2b.html"><u>Lihat selengkapnya</u></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-sm-6 mb-50">
+                                <img src="foto/Group 14 (2).png" alt="">
+                            </div>
+                            <div class="col-12 col-sm-6 mb-50">
+                                <h3>Hitam Manis</h3>
+                                <div class="row ml-1">
+                                    <img src="foto/Star 1.png" alt="">
+                                    <img src="foto/Star 1.png" alt="">
+                                    <img src="foto/Star 1.png" alt="">
+                                    <img src="foto/Star 1.png" alt="">
+                                    <img src="foto/Star 1.png" alt="">
+                                </div>
+                                <p>Jalan Bonto Bulaeng</p>
+                                <p class="mb-4">Dengan tempatnya yang berlokasi di dataran tinggi, hitam manis merupakan
+                                    coffeeshop paket lengkap Menyediakan view yang keren ditambah dengan live music
+                                    performance di setiap malamnya</p>
+                                <a href="hitammanis.html"><u>Lihat selengkapnya</u></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Content End ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="copywrite-text">
+                        <p>&copy; 2024 Coffepedia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+
+    <script>
+        $('#loginBtn').click(function () {
+            $('#loginPopup').modal('show');
+        });
+
+        function loginWithGoogle() {
+            // Implement Google authentication logic here
+            alert('Implement Google authentication logic');
+        }
+    </script>
+
+</body>
+
+</html>

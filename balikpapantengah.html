@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Coffepedia</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="foto/logo.png">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick.js CDN -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+
+<body style="background-color: #F2F2F2;">
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Navbar Area -->
+
+            <div class="nikki-main-menu">
+                <div class="classy-nav-container breakpoint-off">
+                    <div class="container-fluid container">
+                        <!-- Menu -->
+                        <nav class="classy-navbar justify-content-between" id="nikkiNav">
+    
+                            <!-- Nav brand -->
+                             <div class="row">
+                                <a href="index.html" class="nav-brand"><img src="foto/logo.png" alt=""></a>
+                                <!-- Search Form -->
+                                <div class="search-form">
+                                    <form action="#" method="get">
+                                        <input type="search" name="search" class="form-control" placeholder="Cari tempat nongkrongmu">
+                                        <button type="submit"><i class="fa fa-search w-100"></i></button>
+                                    </form>
+                                </div>
+                             </div>
+    
+                            <!-- Navbar Toggler -->
+                            <div class="classy-navbar-toggler">
+                                <span class="navbarToggler"><span></span><span></span><span></span></span>
+                            </div>
+    
+                            <!-- Menu -->
+                            <div class="classy-menu">
+    
+                                <!-- close btn -->
+                                <div class="classycloseIcon">
+                                    <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                                </div>
+    
+                                <!-- Nav Start -->
+                                <div class="classynav">
+                                    <ul>
+                                        <li><a href="#">Telusuri</a>
+                                            <ul class="dropdown">
+                                                <li><a href="telusuri1.html">Yang lagi hits</a></li>
+                                                <li><a href="telusuri2.html">Pusat Kota</a></li>
+                                                <li><a href="telusuri3.html">Hidden Games</a></li>
+                                                <li><a href="telusuri4.html">Cocok Buat Nugas</a></li>
+                                                <li><a href="telusuri5.html">View Bagus</a></li>
+                                                <li><a href="#">Kecamatan</a>
+                                                    <ul class="dropdown">
+                                                      <li><a href="balikpapanutara.html">Balikpapan Utara</a></li>
+                                                      <li><a href="balikpapankota.html">Balikpapan Kota</a></li>
+                                                      <li><a href="balikpapantengah.html">Balikpapan Tengah</a></li>
+                                                      <li><a href="balikpapantimur.html">Balikpapan Timur</a></li>
+                                                      <li><a href="balikpapanselatan.html">BalikpapanSelatan</a></li>
+                                                      <li><a href="balikpapanbarat.html">Balikpapan Barat</a></li>
+                                                    </ul>
+                                                  </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Ulasan</a>
+                                            <ul class="dropdown">
+                                                <li><a href="ulasan.html">Tulis Ulasan</a></li>
+                                                <li><a href="tambahtempat.html">Tambah Tempat</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="favorit.html">Favorit</a></li>
+                                        <li><a class="btn text-white bg-dark rounded-pill" style="border-radius: 30px;" id="loginBtn">Masuk</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Nav End -->
+                                
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <div id="loginPopup" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="mr-2">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body row justify-content-center">
+              <div class="col-12 text-center mb-2">
+                <img src="foto/logo.png" alt="">
+              </div>
+              <div class="col-12 text-center mb-2 p-5">
+                <div class="row p-3" style="border: 2px solid #000; border-radius: 30px;">
+                    <img src="foto/image 6.png" alt="" class="mr-5">
+                    <a onclick="loginWithGoogle()" style="font-size: 20px;">
+                        Lanjutkan dengan Google</a>
+                </div>
+              </div>
+              <p class="text-center">Dengan melanjutkan, berarti Anda menyetujui <u>Persyaratan
+                Penggunaan</u> serta mengonfirmasi bahwa Anda telah
+                membaca <u>Persyaratan Privasi dan Cookie</u> kami.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- ##### Content Start ##### -->
+    <section class="blog-content-area mt-5 mb-4 py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- Blog Posts Area -->
+                <div class="col-12 col-lg-12">
+                    <div class="blog-posts-area">
+                        <div class="row">
+                            <div class="col-12 col-sm-3 py-2 mr-3 mb-50">
+                                <div class="bg-light p-3">
+                                    <h2>Filter</h2>
+                                    <h4>Rating</h4>
+                                    <div class="row mb-3">
+                                        <div class="col-6">
+                                            <div class="custom-control custom-checkbox checkbox-box">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                <label class="custom-control-label checkbox-label" for="customCheck1">
+                                                    <div class="checkbox-content">
+                                                        1 <img src="foto/Star 1 (1).png" alt="" class="ml-1">
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox checkbox-box">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                                <label class="custom-control-label checkbox-label" for="customCheck2">
+                                                    <div class="checkbox-content">
+                                                        2 <img src="foto/Star 1 (1).png" alt="" class="ml-1">
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox checkbox-box">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                                <label class="custom-control-label checkbox-label" for="customCheck3">
+                                                    <div class="checkbox-content">
+                                                        3 <img src="foto/Star 1 (1).png" alt="" class="ml-1">
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox checkbox-box">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                                <label class="custom-control-label checkbox-label" for="customCheck4">
+                                                    <div class="checkbox-content">
+                                                        4 <img src="foto/Star 1 (1).png" alt="" class="ml-1">
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox checkbox-box">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck5">
+                                                <label class="custom-control-label checkbox-label" for="customCheck5">
+                                                    <div class="checkbox-content">
+                                                        5 <img src="foto/Star 1 (1).png" alt="" class="ml-1">
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h4>Fasilitas</h4>
+                                    <div class="row mb-3">
+                                        <div class="col-6">
+                                            <div class="custom-control custom-checkbox checkbox-box">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                <label class="custom-control-label checkbox-label" for="customCheck1">
+                                                    <div class="checkbox-content">
+                                                        Workspace 
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox checkbox-box">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                                <label class="custom-control-label checkbox-label" for="customCheck2">
+                                                    <div class="checkbox-content">
+                                                        Indoor 
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox checkbox-box">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                                <label class="custom-control-label checkbox-label" for="customCheck3">
+                                                    <div class="checkbox-content">
+                                                        Outdoor
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox checkbox-box">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                                <label class="custom-control-label checkbox-label" for="customCheck4">
+                                                    <div class="checkbox-content">
+                                                        Air Conditioner 
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h4>Harga</h4>
+                                    <div class="row ml-2">
+                                        <input class="col-3 mr-1" type="text" placeholder="MIN"> - <input class="col-3 ml-1" type="text" placeholder="MAX">
+                                    </div>
+                                    
+                                    <div class="mt-3">
+                                        <button type="button" class="btn text-white bg-dark rounded-pill" style="border-radius: 30px;">Terapkan</button>
+                                        <button type="button" class="btn text-white bg-dark rounded-pill" style="border-radius: 30px;">Hapus</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-8 mb-50">
+                                <h1>Coffeeshop di Balikpapan Tengah</h1>
+                                <a href="wanikopi.html" class="row bg-light ml-1 mb-3" style="border-radius: 10px;">
+                                    <img class="col-4 p-0" src="foto/1 (14).png" alt="">
+                                    <div class="col-8 d-flex align-items-center">
+                                        <div class="ml-3">
+                                            <h3>Wani Kopi</h3>
+                                            <div class="d-flex mt-3 mb-3">
+                                                <img src="foto/Star 1.png" alt="">
+                                                <img src="foto/Star 1.png" alt="">
+                                                <img src="foto/Star 1.png" alt="">
+                                                <img src="foto/Star 1.png" alt="">
+                                                <img src="foto/Star 1.png" alt="">
+                                            </div>
+                                            <p>Jalan Ahmad Yani</p>
+                                        </div>
+                                    </div>                                    
+                                </a>  
+                                <a href="duskcoffee.html" class="row bg-light ml-1 mb-3" style="border-radius: 10px;">
+                                    <img class="col-4 p-0" src="foto/1 (15).png" alt="">
+                                    <div class="col-8 d-flex align-items-center">
+                                        <div class="ml-3">
+                                            <h3>Dusk Coffee</h3>
+                                            <div class="d-flex mt-3 mb-3">
+                                                <img src="foto/Star 1.png" alt="">
+                                                <img src="foto/Star 1.png" alt="">
+                                                <img src="foto/Star 1.png" alt="">
+                                                <img src="foto/Star 1.png" alt="">
+                                                <img src="foto/Star 1.png" alt="">
+                                            </div>
+                                            <p>Jalan D. I. Panjaitan </p>
+                                        </div>
+                                    </div>                                    
+                                </a>  
+                                <a href="bestari.html" class="row bg-light ml-1 mb-3" style="border-radius: 10px;">
+                                    <img class="col-4 p-0" src="foto/1 (16).png" alt="">
+                                    <div class="col-8 d-flex align-items-center">
+                                        <div class="ml-3">
+                                            <h3>Bestari Coffee</h3>
+                                            <div class="d-flex mt-3 mb-3">
+                                                <img src="foto/Star 1.png" alt="">
+                                                <img src="foto/Star 1.png" alt="">
+                                                <img src="foto/Star 1.png" alt="">
+                                                <img src="foto/Star 1.png" alt="">
+                                                <img src="foto/Star 1.png" alt="">
+                                            </div>
+                                            <p>Jalan Milono</p>
+                                        </div>
+                                    </div>                                    
+                                </a>     
+                                <a href="kopikanam.html" class="row bg-light ml-1 mb-3" style="border-radius: 10px;">
+                                    <img class="col-4 p-0" src="foto/1 (17).png" alt="">
+                                    <div class="col-8 d-flex align-items-center">
+                                        <div class="ml-3">
+                                            <h3>Kopi Kanam</h3>
+                                            <div class="d-flex mt-3 mb-3">
+                                                <img src="foto/Star 1.png" alt="">
+                                                <img src="foto/Star 1.png" alt="">
+                                                <img src="foto/Star 1.png" alt="">
+                                                <img src="foto/Star 1.png" alt="">
+                                                <img src="foto/Star 1.png" alt="">
+                                            </div>
+                                            <p>Jalan Mekarsari</p>
+                                        </div>
+                                    </div>                                    
+                                </a>                                       
+                            </div>                                             
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Content End ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="copywrite-text">
+                        <p>&copy; 2024 Coffepedia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+
+    <script>
+        $('#loginBtn').click(function() {
+        $('#loginPopup').modal('show');
+        });
+
+        function loginWithGoogle() {
+        // Implement Google authentication logic here
+        alert('Implement Google authentication logic');
+        }
+    </script>
+
+</body>
+
+</html>

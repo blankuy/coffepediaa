@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Coffepedia</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="foto/logo.png">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick.js CDN -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <style>
+        .upload-box {
+            border: 2px solid #D9D9D9;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            height: 400px;
+            position: relative;
+            background-color: #fff;
+            display: flex;
+            justify-content: center; /* Mengatur horisontal center */
+            align-items: center;
+        }
+
+        .upload-label {
+            cursor: pointer;
+            display: block;
+            font-size: 16px;
+            color: #666;
+        }
+
+        .upload-icon {
+            font-size: 40px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .file-upload {
+            display: none;
+        }
+        .checkbox-box {
+            font-size: 18px; /* Ubah ukuran font */
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .checkbox-label {
+            padding-left: 10px; /* Menyesuaikan padding */
+            margin-bottom: 0; /* Menghapus margin bawah default */
+            display: inline-block; /* Membuat label menampilkan di dalam kotak */
+            line-height: 1; /* Mengatur jarak baris agar lebih rapat */
+        }
+    </style>
+</head>
+
+<body style="background-color: #F2F2F2;">
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Navbar Area -->
+
+            <div class="nikki-main-menu">
+                <div class="classy-nav-container breakpoint-off">
+                    <div class="container-fluid container">
+                        <!-- Menu -->
+                        <nav class="classy-navbar justify-content-between" id="nikkiNav">
+    
+                            <!-- Nav brand -->
+                             <div class="row">
+                                <a href="index.html" class="nav-brand"><img src="foto/logo.png" alt=""></a>
+                                <!-- Search Form -->
+                                <div class="search-form">
+                                    <form action="#" method="get">
+                                        <input type="search" name="search" class="form-control" placeholder="Cari tempat nongkrongmu">
+                                        <button type="submit"><i class="fa fa-search w-100"></i></button>
+                                    </form>
+                                </div>
+                             </div>
+    
+                            <!-- Navbar Toggler -->
+                            <div class="classy-navbar-toggler">
+                                <span class="navbarToggler"><span></span><span></span><span></span></span>
+                            </div>
+    
+                            <!-- Menu -->
+                            <div class="classy-menu">
+    
+                                <!-- close btn -->
+                                <div class="classycloseIcon">
+                                    <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                                </div>
+    
+                                <!-- Nav Start -->
+                                <div class="classynav">
+                                    <ul>
+                                        <li><a href="#">Telusuri</a>
+                                            <ul class="dropdown">
+                                                <li><a href="telusuri1.html">Yang lagi hits</a></li>
+                                                <li><a href="telusuri2.html">Pusat Kota</a></li>
+                                                <li><a href="telusuri3.html">Hidden Games</a></li>
+                                                <li><a href="telusuri4.html">Cocok Buat Nugas</a></li>
+                                                <li><a href="telusuri5.html">View Bagus</a></li>
+                                                <li><a href="#">Kecamatan</a>
+                                                    <ul class="dropdown">
+                                                      <li><a href="balikpapanutara.html">Balikpapan Utara</a></li>
+                                                      <li><a href="balikpapankota.html">Balikpapan Kota</a></li>
+                                                      <li><a href="balikpapantengah.html">Balikpapan Tengah</a></li>
+                                                      <li><a href="balikpapantimur.html">Balikpapan Timur</a></li>
+                                                      <li><a href="balikpapanselatan.html">BalikpapanSelatan</a></li>
+                                                      <li><a href="balikpapanbarat.html">Balikpapan Barat</a></li>
+                                                    </ul>
+                                                  </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Ulasan</a>
+                                            <ul class="dropdown">
+                                                <li><a href="ulasan.html">Tulis Ulasan</a></li>
+                                                <li><a href="tambahtempat.html">Tambah Tempat</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="favorit.html">Favorit</a></li>
+                                        <li><a class="btn text-white bg-dark rounded-pill" style="border-radius: 30px;" id="loginBtn">Masuk</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Nav End -->
+                                
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <div id="loginPopup" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="mr-2">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body row justify-content-center">
+              <div class="col-12 text-center mb-2">
+                <img src="foto/logo.png" alt="">
+              </div>
+              <div class="col-12 text-center mb-2 p-5">
+                <div class="row p-3" style="border: 2px solid #000; border-radius: 30px;">
+                    <img src="foto/image 6.png" alt="" class="mr-5">
+                    <a onclick="loginWithGoogle()" style="font-size: 20px;">
+                        Lanjutkan dengan Google</a>
+                </div>
+              </div>
+              <p class="text-center">Dengan melanjutkan, berarti Anda menyetujui <u>Persyaratan
+                Penggunaan</u> serta mengonfirmasi bahwa Anda telah
+                membaca <u>Persyaratan Privasi dan Cookie</u> kami.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- ##### Content Start ##### -->
+    <section class="blog-content-area mt-5 mb-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-12">
+                    <div class="blog-posts-area">
+                        <!-- Pager -->
+                        <ol class="nikki-pager mb-2">
+                                <h1>Space N Coffee</h1>
+                                <div>
+                                    <a href="#"><img src="foto/save.png" alt=""></a>
+                                    <a href="#"><img src="foto/share.png" alt=""></a>
+                                </div>
+                        </ol>
+                        <div class="row">
+                            <div class="col-12 col-sm-7 mb-50">
+                                <img src="foto/1 (27).png" alt="">
+                            </div>
+                            <div class="col-12 col-sm-5 mb-50">
+                                <div class="row mb-4">
+                                    <div class="col-6"><img src="foto/5 (4).png" alt=""></div>
+                                    <div class="col-6"><img src="foto/6 (4).png" alt=""></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6"><img src="foto/7 (4).png" alt=""></div>
+                                    <div class="col-6"><img src="foto/8 (4).png" alt=""></div>
+                                </div>
+                            </div>                                             
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-12">
+                    <div class="blog-posts-area">
+                        <div class="row">
+                            <div class="col-12 col-sm-7 mb-50">
+                                <div class="p-3" style="background-color: white; border-radius: 10px; min-height: 50vh;">
+                                    <h4>Penilaian</h4>
+                                    <p class="text-dark">Belum ada penilaian</p>
+                                    <p class="text-dark">$ - $$</p>
+                                    <h4>Tentang</h4>
+                                    <p class="text-dark text-justify">Lebih dikenal dengan sebutan SNC. Coffeeshop yang satu ini memiliki suasana yang teduh nan adem, dipayungi pepohonan rimbun dan dipadukan dengan lokasi didataran tinggi membuat para pengunjung betah untuk berlama-lama di SNC</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-5 mb-50">
+                                <div class="p-3" style="background-color: white; border-radius: 10px; min-height: 50vh;">
+                                    <h4>Menu</h4>
+                                    <p class="text-dark">Kopi, non-kopi, makanan ringan, makanan berat</p>
+                                    <h4>Fasilitas</h4>
+                                    <p class="text-dark text-justify">Tempat parkir, WIFI, outdoor, indoor, workspace</p>
+                                    <h4>Jam Operasional</h4>
+                                    <p class="text-dark">10.00 - 23.00</p>
+                                </div>
+                            </div>                                             
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-12">
+                    <div class="blog-posts-area">
+                        <div class="row">
+                            <div class="col-12 col-sm-7 mb-50">
+                                <div class="p-3" style="background-color: white; border-radius: 10px; min-height: 60vh;">
+                                    <h2>Ulasan</h2>
+                                    <div class="row justify-content-center align-content-center" style="min-height: 55vh;">
+                                        <h4 class="col-12 text-center">Kosong?</h4>
+                                        <a href="tulisulasan.html"><u>Jadi yang pertama mengulas tempat ini</u></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-5 mb-50">
+                                <div class="p-3" style="background-color: white; border-radius: 10px; min-height: 60vh;">
+                                    <h4>Lokasi</h4>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8274178302504!2d116.82497959999999!3d-1.2769842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df147e80af57f59%3A0xb1348f0cde5dff51!2sSNC%20Coffee%20Space!5e0!3m2!1sen!2sid!4v1719887365757!5m2!1sen!2sid" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <h4 class="mt-2">Alamat</h4>
+                                    <p class="text-dark text-justify">Jalan Tanjung Pura No.19, Klandasan Ulu,  76111</p>
+                                    <h4>Kontak</h4>
+                                    <p class="text-dark">IG : snc.coffeespace</p>
+                                </div>
+                            </div>                                             
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Content End ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="copywrite-text">
+                        <p>&copy; 2024 Coffepedia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area Start ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+
+    <script>
+        $('#loginBtn').click(function() {
+        $('#loginPopup').modal('show');
+        });
+
+        function loginWithGoogle() {
+        // Implement Google authentication logic here
+        alert('Implement Google authentication logic');
+        }
+    </script>
+
+</body>
+
+</html>
